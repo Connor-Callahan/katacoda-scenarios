@@ -28,6 +28,10 @@
     "assets":{
       "host01":[
         {
+          "file":"requests_0.gor",
+          "target":"/root"
+        },
+        {
           "file":"values.yaml",
           "target":"/root/k8s-yaml-files"
         },
