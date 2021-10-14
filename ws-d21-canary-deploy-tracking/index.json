@@ -27,7 +27,11 @@
       },
       {
         "text":"step5.md",
-        "title": "Verify and finalize"
+        "title": "Comparing versions"
+      },
+      {
+        "text":"step6.md",
+        "title": "Final deployments"
       }
     ],
     "finish":{
