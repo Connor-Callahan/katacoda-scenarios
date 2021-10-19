@@ -31,7 +31,11 @@
       },
       {
         "text":"step6.md",
-        "title": "Final deployments"
+        "title": "Errors everywhere!"
+      },
+      {
+        "text":"step7.md",
+        "title": "Final deployment and cleanup"
       }
     ],
     "finish":{
