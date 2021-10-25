@@ -31,11 +31,7 @@
       },
       {
         "text":"step6.md",
-        "title": "Errors everywhere!"
-      },
-      {
-        "text":"step7.md",
-        "title": "Final deployment and cleanup"
+        "title": "Final deployments"
       }
     ],
     "finish":{
@@ -95,7 +91,7 @@
     ]
   },
   "backend":{
-    "imageid":"kubernetes-cluster-running:1.18",
+    "imageid":"datadog-k8s-v118-cluster-running",
     "reuseConnection":"false"
   }
 }

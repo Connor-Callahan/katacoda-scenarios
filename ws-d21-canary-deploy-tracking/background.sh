@@ -45,8 +45,7 @@ if [ "$STATUS" != "complete" ]; then
     sleep 0.3
     NPODS=$(kubectl get pods --field-selector=status.phase=Running | grep -v NAME | wc -l)
   done
-
+  ./gor --input-file-loop --input-file "./requests_0.gor|300%" --output-http "http://localhost:30001"
   statusupdate complete
 fi
 
-./gor --input-file-loop --input-file "./requests_0.gor|300%" --output-http "http://localhost:30001" >> /dev/null 2>&1
