@@ -4,13 +4,21 @@ With the [Service List](https://app.datadoghq.com/apm/services?env=ruby-shop), w
 
 For example, if we look at the [Frontend Service](https://app.datadoghq.com/apm/service/store-frontend), we can see errors coming in by navigating to the [APM > Traces](https://app.datadoghq.com/apm/traces?start=1620938913331&end=1620939813331&paused=false) page. Now on the left hand side navigation filter for `Status > Error` and `Service > store-frontend`. Errors are not a good experience for our end users. 
 
-![Storefront Errors](./assets/storefront-errors.png)
+![Storefront Errors](./assets/error_logs.png)
 
-Scrolling down to the endpoints panel, we can see there are two endpoints in particular that are substantially slower than the rest...
+Let's go ahead and click on one of our traces to bring up the full view. We can see when investigating the flaming graph that there is a template error coming in. 
+
+![Flame Graph](./assets/flame_graph.png)
+
+Let's go directly from this view to our Frontend Service page to see if we can pinpoint what is going on. 
+
+![Flame Graph to Service Page](./assets/go_to_service.png)
+
+Now that we are on the Frontend Service page, we can scroll down to the endpoints panel and see there are two endpoints in particular that are substantially slower than the rest...
 
 ![Slow Services](./assets/bottleneck.gif)
 
-Both the `HomeController#index` and the `ProductController#show` enpoints are showing *much* longer latency times. If we click in and view a trace, we'll see that we've got a downstream microservice taking up a substantial portion of our time.
+Both the `HomeController#index` and the `ProductController#show` endpoints are showing *much* longer latency times. If we click in and view a trace, we'll see that we've got a downstream microservice taking up a substantial portion of our time.
 
 Heading back to the [APM > Services](https://app.datadoghq.com/apm/services?env=ruby-shop) and clicking the `advertisements` service, down just below the `Latency Distribution` graph you should see the `Deployments` section. 
 
