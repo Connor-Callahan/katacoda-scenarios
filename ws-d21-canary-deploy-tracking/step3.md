@@ -6,7 +6,7 @@ For example, if we look at the [Frontend Service](https://app.datadoghq.com/apm/
 
 ![Storefront Errors](./assets/error_logs.png)
 
-Let's go ahead and click on one of our traces to bring up the full view. We can see when investigating the flaming graph that there is a template error coming in. 
+Let's go ahead and click on one of our traces to bring up the full view. We can see when investigating the flame graph that there is a template error coming in. 
 
 ![Flame Graph](./assets/flame_graph.png)
 
