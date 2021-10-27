@@ -18,7 +18,7 @@ the following credentials:
 
     `ls -la`{{execute}}
 
-1. In the terminal on the right you should see login information for the account we created for you. Later if you forget the login information, run `creds`{{execute}} and you will see the information again. Now , using the provided credentials, login to your account on<a href="https://app.datadoghq.com" target="_datadog">Datadog </a>. 
+1. In the terminal on the right you should see login information for the account we created for you. Later if you forget the login information, run `creds`{{execute}} and you will see the information again. Now , using the provided credentials, login to your account on <a href="https://app.datadoghq.com" target="_datadog">Datadog </a>. 
 
 1. Now that you are logged into the platform , visit <a href="https://app.datadoghq.com/account/settings#api" target="_datadog">the API Keys section</a>, which you can find in the Global Navigation under **Integrations > APIs**. Expand API Keys and hover over the purple rectangle to reveal the API key we have created for you.
 
@@ -35,10 +35,6 @@ the following credentials:
 ## Storedog
 
 In the terminal on the right, the environment is set up with Kubernetes and a deployment of Storedog. Storedog is an e-commerce application that you can interact with via the StoredogV1 tab located to your right at the top of the terminal.
-
-In the terminal on the right, you should see credentials for a newly provisioned Datadog trial account. Open a new window/tab and use the provided credentials to log into the [Datadog](https://app.datadoghq.com/account/login) platform.
-
-**Note**: You can access these login credentials whenever you need by typing `creds` in the terminal.
 
 Run `kubectl get all`{{execute}} in the terminal to the right by clicking the code snippet, this will show you all the kubernetes resources that comprise our application.
 
